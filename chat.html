@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with GreenPulse | Sustainable Living Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chat-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="chat-page">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-leaf pulse"></i>
+                <span>GreenPulse</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="index.html" class="home-btn">Home</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="chat-page-container">
+        <div class="chat-sidebar">
+            <div class="bot-profile">
+                <div class="bot-avatar">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h2>GreenPulse</h2>
+                <p>Your AI companion for sustainable living</p>
+                <div class="pulse-animation"></div>
+            </div>
+            <div class="quick-tips">
+                <h3>Quick Topics</h3>
+                <ul>
+                    <li><i class="fas fa-bolt"></i> Energy Conservation</li>
+                    <li><i class="fas fa-recycle"></i> Waste Reduction</li>
+                    <li><i class="fas fa-shopping-bag"></i> Sustainable Shopping</li>
+                    <li><i class="fas fa-seedling"></i> Eco-friendly Habits</li>
+                </ul>
+            </div>
+            <div class="powered-by">
+                <p>Powered by</p>
+                <div class="api-logo">
+                    <img src="https://lh3.googleusercontent.com/i7eWx0nMMTvM3-lEZaVWrEgLCyJwRzQtT6lxzSF2eUmQwqnZ4NTdLc-5YNhEH_8c2S2Ml9WI-pP3aZ7O4HJ9tC3bvP5Mzb5EiP0" alt="Gemini AI">
+                </div>
+            </div>
+        </div>
+        <div class="chat-main">
+            <div class="chat-header">
+                <div class="chat-status">
+                    <span class="status-dot"></span>
+                    <span>Online & Ready</span>
+                </div>
+                <h3>Chat with GreenPulse</h3>
+                <div class="chat-actions">
+                    <button class="clear-chat" title="Clear chat"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Hello! I'm GreenPulse, your sustainable living assistant. How can I help you adopt a greener lifestyle today?
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Ask me about sustainable living...">
+                    <button id="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-suggestions">
+                    <span>Try asking about:</span>
+                    <div class="suggestion-chips">
+                        <button class="suggestion-chip">Energy saving tips</button>
+                        <button class="suggestion-chip">Recycling advice</button>
+                        <button class="suggestion-chip">Sustainable shopping</button>
+                        <button class="suggestion-chip">Water conservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html> 
